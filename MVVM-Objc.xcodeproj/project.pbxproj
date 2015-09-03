@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3480F5D21B8DEA68002477BC /* ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3480F5D11B8DEA68002477BC /* ViewControllerTests.m */; };
 		34A9F73F1B8C9CCB0007C25F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F73E1B8C9CCB0007C25F /* main.m */; };
 		34A9F7421B8C9CCB0007C25F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F7411B8C9CCB0007C25F /* AppDelegate.m */; };
 		34A9F7451B8C9CCB0007C25F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F7441B8C9CCB0007C25F /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		34A9F74A1B8C9CCB0007C25F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A9F7491B8C9CCB0007C25F /* Images.xcassets */; };
 		34A9F74D1B8C9CCB0007C25F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A9F74B1B8C9CCB0007C25F /* LaunchScreen.xib */; };
 		34A9F7591B8C9CCB0007C25F /* MVVM_ObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F7581B8C9CCB0007C25F /* MVVM_ObjcTests.m */; };
+		34A9F7661B8C9DEB0007C25F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F7651B8C9DEB0007C25F /* Person.m */; };
+		34A9F7691B8C9E010007C25F /* PersonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A9F7681B8C9E010007C25F /* PersonViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3480F5D01B8DEA68002477BC /* ViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerTests.h; sourceTree = "<group>"; };
+		3480F5D11B8DEA68002477BC /* ViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTests.m; sourceTree = "<group>"; };
 		34A9F7391B8C9CCB0007C25F /* MVVM-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A9F73D1B8C9CCB0007C25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34A9F73E1B8C9CCB0007C25F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,10 @@
 		34A9F7521B8C9CCB0007C25F /* MVVM-ObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-ObjcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A9F7571B8C9CCB0007C25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34A9F7581B8C9CCB0007C25F /* MVVM_ObjcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVM_ObjcTests.m; sourceTree = "<group>"; };
+		34A9F7641B8C9DEB0007C25F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		34A9F7651B8C9DEB0007C25F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		34A9F7671B8C9E010007C25F /* PersonViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewModel.h; sourceTree = "<group>"; };
+		34A9F7681B8C9E010007C25F /* PersonViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		348B01451B982781007EA2DE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				34A9F7431B8C9CCB0007C25F /* ViewController.h */,
+				34A9F7441B8C9CCB0007C25F /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		34A9F7301B8C9CCA0007C25F = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +101,10 @@
 			children = (
 				34A9F7401B8C9CCB0007C25F /* AppDelegate.h */,
 				34A9F7411B8C9CCB0007C25F /* AppDelegate.m */,
-				34A9F7431B8C9CCB0007C25F /* ViewController.h */,
-				34A9F7441B8C9CCB0007C25F /* ViewController.m */,
+				348B01451B982781007EA2DE /* ViewControllers */,
 				34A9F7461B8C9CCB0007C25F /* Main.storyboard */,
+				34A9F7631B8C9DD90007C25F /* viewmodel */,
+				34A9F7621B8C9DD10007C25F /* model */,
 				34A9F7491B8C9CCB0007C25F /* Images.xcassets */,
 				34A9F74B1B8C9CCB0007C25F /* LaunchScreen.xib */,
 				34A9F73C1B8C9CCB0007C25F /* Supporting Files */,
@@ -106,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				34A9F7581B8C9CCB0007C25F /* MVVM_ObjcTests.m */,
+				3480F5D01B8DEA68002477BC /* ViewControllerTests.h */,
+				3480F5D11B8DEA68002477BC /* ViewControllerTests.m */,
 				34A9F7561B8C9CCB0007C25F /* Supporting Files */,
 			);
 			path = "MVVM-ObjcTests";
@@ -117,6 +138,24 @@
 				34A9F7571B8C9CCB0007C25F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34A9F7621B8C9DD10007C25F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				34A9F7641B8C9DEB0007C25F /* Person.h */,
+				34A9F7651B8C9DEB0007C25F /* Person.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		34A9F7631B8C9DD90007C25F /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				34A9F7671B8C9E010007C25F /* PersonViewModel.h */,
+				34A9F7681B8C9E010007C25F /* PersonViewModel.m */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A9F7691B8C9E010007C25F /* PersonViewModel.m in Sources */,
 				34A9F7451B8C9CCB0007C25F /* ViewController.m in Sources */,
 				34A9F7421B8C9CCB0007C25F /* AppDelegate.m in Sources */,
+				34A9F7661B8C9DEB0007C25F /* Person.m in Sources */,
 				34A9F73F1B8C9CCB0007C25F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3480F5D21B8DEA68002477BC /* ViewControllerTests.m in Sources */,
 				34A9F7591B8C9CCB0007C25F /* MVVM_ObjcTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +458,7 @@
 				34A9F75E1B8C9CCB0007C25F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34A9F75F1B8C9CCB0007C25F /* Build configuration list for PBXNativeTarget "MVVM-ObjcTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +467,7 @@
 				34A9F7611B8C9CCB0007C25F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
